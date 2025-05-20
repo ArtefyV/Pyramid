@@ -1,2 +1,19 @@
 # Project exclude paths
 /.gradle/
+/build/
+/out/
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test results
+/test-results/
+/test-output/
