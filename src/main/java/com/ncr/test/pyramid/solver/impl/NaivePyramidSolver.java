@@ -13,7 +13,7 @@ public class NaivePyramidSolver implements PyramidSolver {
     }
 
     private long getTotalAbove(int row, int column, Pyramid pyramid) {
-        if (row == 0) return 0;
+        if (row == 0) return pyramid.get(0, column); // Code line 'if (row == 0) return 0;' was wrong, because it should return the value of the top element of the pyramid.
 
         int myValue = pyramid.get(row, column);
         long left  = myValue + getTotalAbove(row - 1, column, pyramid);

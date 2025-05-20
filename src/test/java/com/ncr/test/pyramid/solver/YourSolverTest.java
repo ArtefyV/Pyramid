@@ -3,6 +3,7 @@ package com.ncr.test.pyramid.solver;
 import com.ncr.test.pyramid.data.Pyramid;
 import com.ncr.test.pyramid.data.PyramidGenerator;
 import com.ncr.test.pyramid.data.impl.RandomPyramidGenerator;
+import com.ncr.test.pyramid.solver.impl.NaivePyramidSolver;
 import com.ncr.test.pyramid.solver.impl.YourSolver;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,8 +30,11 @@ public class YourSolverTest {
     protected PyramidSolver solver;
 
     @Before
-    public void setUp() {
+/*    public void setUp() {
         solver = new YourSolver();
+    }*/
+    public void setUp() {
+        solver = new NaivePyramidSolver();
     }
 
     @Test
