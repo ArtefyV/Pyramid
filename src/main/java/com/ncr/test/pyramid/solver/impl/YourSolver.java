@@ -11,6 +11,10 @@ public class YourSolver implements PyramidSolver {
 
     @Override
     public long pyramidMaximumTotal(Pyramid pyramid) {
+        if(pyramid == null) {
+            throw new IllegalArgumentException("Pyramid cannot be null");
+        }
+
         int rows = pyramid.getRows();
         if(rows == 0) return 0;
 
